@@ -1,6 +1,6 @@
 # T3 Code agent recordings: JPEG screencast vs in-browser tab capture
 
-Reproduces a T3 Code issue: agent recordings (`preview_recording_start` / `preview_recording_stop`) of 3200×1800 frames at the 60 fps setting fall well below 60 fps and keep most CPU threads busy, because every frame goes through a JPEG screencast, base64 and a second decode before `MediaRecorder` encodes it. Recording the tab inside Chrome with `chrome.tabCapture` reaches about 60 fps for less CPU.
+Reproduces [pingdotgg/t3code#26683](https://github.com/pingdotgg/t3code/issues/26683) (fix proposed in [#26684](https://github.com/pingdotgg/t3code/pull/26684)): agent recordings (`preview_recording_start` / `preview_recording_stop`) of 3200×1800 frames at the 60 fps setting fall well below 60 fps and keep most CPU threads busy, because every frame goes through a JPEG screencast, base64 and a second decode before `MediaRecorder` encodes it. Recording the tab inside Chrome with `chrome.tabCapture` reaches about 60 fps for less CPU.
 
 The scripts run T3's server recording pipeline outside the app, with the browsers and launch flags T3 uses:
 
