@@ -1,0 +1,7 @@
+off|--disable-gpu
+default|
+d3d11|--use-angle=d3d11
+d3d11-blocklist|--use-angle=d3d11 --ignore-gpu-blocklist
+d3d11on12|--use-angle=d3d11on12
+vulkan|--use-angle=vulkan --enable-features=Vulkan,DefaultANGLEVulkan,VulkanFromANGLE
+gl|--use-angle=gl

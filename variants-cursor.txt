@@ -1,0 +1,6 @@
+gpu-none||none:mr,none:mr,none:mr|1|4|960x540
+gpu-dom||dom:mr,dom:mr,dom:mr|1|4|960x540
+gpu-none-wc||none:wc-hw,none:wc-hw,none:wc-hw|1|4|960x540
+gpu-dom-wc||dom:wc-hw,dom:wc-hw,dom:wc-hw|1|4|960x540
+cpu-none|--disable-gpu|none:mr,none:mr|1|4|960x540
+cpu-dom-wc|--disable-gpu|dom:wc-sw,dom:wc-sw|1|4|960x540

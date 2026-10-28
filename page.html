@@ -1,0 +1,7 @@
+<!doctype html><meta charset=utf-8><style>body{margin:0;font:14px system-ui;background:#fff;color:#1f2937;overflow:hidden}
+#box{position:absolute;width:200px;height:120px;background:#3b82f6;border-radius:12px}#n{position:absolute;top:8px;right:16px;font-size:32px}</style>
+<div id=n></div><div id=box></div><div id=t></div><script>
+const lines = Number(new URLSearchParams(location.search).get("lines") ?? 20);
+let s='';for(let i=0;i<lines;i++)s+='<p style="margin:2px 12px">Line '+i+' — The quick brown fox jumps over the lazy dog; const value = compute(input, options) => result '+i+'</p>';
+t.innerHTML=s;const f=(ts)=>{box.style.transform='translate('+(ts/3%(innerWidth-200))+'px,'+(ts/5%(innerHeight-120))+'px)';n.textContent=Math.round(ts);requestAnimationFrame(f)};requestAnimationFrame(f);
+</script>
